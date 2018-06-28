@@ -4,15 +4,20 @@ const bodyParser = require('body-parser');
 // create express app
 const app = express();
 
-// parse requests of content-type - application/x-www-form-urlencoded
+// parse requests of URL
 app.use(bodyParser.urlencoded({ extended: true }))
 
-// parse requests of content-type - application/json
+// parse requests of JSON
 app.use(bodyParser.json())
 
 // define a simple route
 app.get('/', (req, res) => {
     res.json({"message": "Welcome!!"});
+});
+
+//define a different route
+app.get('/',(req,res) => {
+	res.json({"message" : "Welcomr to Test Route!"});
 });
 
 // listen for requests
