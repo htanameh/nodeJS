@@ -1,5 +1,11 @@
 # nodeJS
 nodeJS 
+
+#modules used
+mongoose
+express
+body-parser
+
 #Basic CRUD
 --> To Add Message
 /index.htm
